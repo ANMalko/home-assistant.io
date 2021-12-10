@@ -26,7 +26,7 @@ An automation can be triggered by an event, with a certain entity state, at a gi
 
 ## Trigger ID
 
-All triggers can be assigned an optional `id`. If the ID is omitted, it will instead be set to the index of the trigger. The `id` can be referenced from trigger conditions and actions. The `id` does not have to be unique for each trigger, and it can be used to group similar triggers for use later in the automation (i.e., several triggers of different types that should all turn some entity on).
+All triggers can be assigned an optional `id`. If the ID is omitted, it will instead be set to the index of the trigger. The `id` can be referenced from [trigger conditions and actions](/docs/scripts/conditions/#trigger-condition). The `id` does not have to be unique for each trigger, and it can be used to group similar triggers for use later in the automation (i.e., several triggers of different types that should all turn some entity on).
 
 ```yaml
 automation:
@@ -46,7 +46,7 @@ automation:
 
 ## Trigger variables
 
-Similar to [script level variables](/integrations/script/#variables), `trigger_variables` will be available in trigger templates with the difference that only [limited templates](/docs/configuration/templating/#limited-templates) can  be used to pass a value to the trigger variable.
+Similar to [script level variables](/integrations/script/#variables), `trigger_variables` will be available in [trigger templates](/docs/automation/templating) with the difference that only [limited templates](/docs/configuration/templating/#limited-templates) can  be used to pass a value to the trigger variable.
 
 ## Event trigger
 
