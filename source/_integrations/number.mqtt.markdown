@@ -50,9 +50,13 @@ availability_mode:
    required: false
    type: string
    default: latest
+command_template:
+  description: Defines a [template](/docs/configuration/templating/#processing-incoming-data) to generate the payload to send to `command_topic`.
+  required: false
+  type: template
 command_topic:
   description: The MQTT topic to publish commands to change the number.
-  required: false
+  required: true
   type: string
 device:
   description: "Information about the device this Number is a part of to tie it into the [device registry](https://developers.home-assistant.io/docs/en/device_registry_index.html). Only works through [MQTT discovery](/docs/mqtt/discovery/) and when [`unique_id`](#unique_id) is set. At least one of identifiers or connections must be present to identify the device."
@@ -129,6 +133,10 @@ max:
   default: 100
 name:
   description: The name of the Number.
+  required: false
+  type: string
+object_id:
+  description: Used instead of `name` for automatic generation of `entity_id`
   required: false
   type: string
 optimistic:

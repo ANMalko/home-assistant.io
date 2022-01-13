@@ -23,10 +23,10 @@ ha_codeowners:
 ha_domain: homekit_controller
 ha_zeroconf: true
 ha_platforms:
-  - air_quality
   - alarm_control_panel
   - binary_sensor
   - camera
+  - button
   - climate
   - cover
   - fan

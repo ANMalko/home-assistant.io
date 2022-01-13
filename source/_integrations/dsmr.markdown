@@ -36,7 +36,7 @@ A sensor platform for Belgian, Dutch, Luxembourg and Swedish Smart Meters which 
 
 ### Options
 
-To configure options for DSMR integration go to **Configuration** >> **Integrations** and press **Options** on the DSMR card.
+To configure options for DSMR integration go to **Configuration** >> **Devices & Services** and press **Options** on the DSMR card.
 
 #### Time between updates
 
@@ -74,7 +74,7 @@ Connection can be done directly to the meter via a USB to serial connector, or t
 Docker users have to allow Docker access to the USB to serial converter by adding `--device /dev/ttyUSB21:/dev/ttyUSB21` to the run command:
 
 ```hass
-$ docker run --device /dev/ttyUSB0:/dev/ttyUSB0 -d --name="home-assistant" -v /home/USERNAME/hass:/config -v /etc/localtime:/etc/localtime:ro --net=host {{ site.installation.container.base }}
+$ docker run --device /dev/ttyUSB0:/dev/ttyUSB0 -d --name="home-assistant" -v /home/USERNAME/hass:/config -v /etc/localtime:/etc/localtime:ro --net=host {{ site.installation.container }}
 ```
 
 #### Serial to network proxies:

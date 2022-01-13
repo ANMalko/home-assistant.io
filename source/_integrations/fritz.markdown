@@ -56,7 +56,7 @@ Reboot the router.
 
 | Service data attribute | Optional | Description                                                                                                    |
 | ---------------------- | -------- | -------------------------------------------------------------------------------------------------------------- |
-| `entity_id`            | no       | Only act on a specific  router                                                                                 |
+| `device_id`            | no       | Only act on a specific  router                                                                                 |
 
 #### Service `fritz.reconnect`
 
@@ -65,7 +65,7 @@ If you have a dynamic IP address, most likely it will change.
 
 | Service data attribute | Optional | Description                                                                                                    |
 | ---------------------- | -------- | -------------------------------------------------------------------------------------------------------------- |
-| `entity_id`            | no       | Only act on a specific  router                                                                                 |
+| `device_id`            | no       | Only act on a specific  router                                                                                 |
 
 #### Service `fritz.cleanup`
 
@@ -74,7 +74,7 @@ A device is identified as stale when it's still present on Home Assistant but no
 
 | Service data attribute | Optional | Description                                                                                                    |
 | ---------------------- | -------- | -------------------------------------------------------------------------------------------------------------- |
-| `entity_id`            | no       | Only act on a specific  router                                                                                 |
+| `device_id`            | no       | Only act on a specific  router                                                                                 |
 
 ## Integration Options
 
@@ -93,9 +93,7 @@ Parental control switches are designed for advanced users, thus they are disable
 
 ### Device Tracker
 
-**Note 1**: All devices to be tracked, even the new detected, are disabled by default. You need to enable the wanted entities manually.
-
-**Note 2**: If you don't want to automatically track newly detected devices, disable the integration system option `Enable new added entities`.
+**Note**: If you don't want to automatically track newly detected devices, disable the integration system option `Enable new added entities`.
 
 ### Port Forward
 
